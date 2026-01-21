@@ -322,12 +322,12 @@
         {
           "type": "email",
           "label": "Email",
-          "value": "contact@exemple.fr"
+          "value": "manonpontasse@gmail.com"
         },
         {
           "type": "phone",
           "label": "Téléphone",
-          "value": "+33 6 00 00 00 00"
+          "value": "+33 6 04 16 40 87"
         }
       ],
       "form": {
@@ -385,9 +385,9 @@
         "statusLabel": "Statut",
         "statusValue": "Éducatrice spécialisée indépendante",
         "emailLabel": "Email",
-        "emailValue": "contact@exemple.fr",
+        "emailValue": "manonpontasse@gmail.com",
         "addressLabel": "Adresse",
-        "addressValue": "À compléter",
+        "addressValue": "Strasbourg, France",
         "siretLabel": "SIRET",
         "siretValue": "À compléter"
       },
@@ -439,7 +439,7 @@
       },
       "contact": {
         "text": "Pour exercer vos droits, contactez :",
-        "email": "contact@exemple.fr"
+        "email": "manonpontasse@gmail.com"
       }
     }
   },
