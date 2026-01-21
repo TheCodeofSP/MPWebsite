@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "locale": "fr",
+    "brand": {
+      "name": "Éducatrice spécialisée",
+      "tagline": "Déficience intellectuelle, avec ou sans trouble associé"
+    }
+  },
+  "home": {
+    "intro": {
+      "title": "Manon, Éducatrice spécialisée indépendante",
+      "subtitle": "Pour enfants, adolescents et adultes avec déficience intellectuelle, avec ou sans trouble associé. J'assure un suivi structuré, bienveillant et adapté au rythme de chaque personne, en lien avec la famille et les partenaires."
+    },
+    "content": {
+      "highlights": [
+        "Évaluation des besoins et du fonctionnement au quotidien",
+        "Objectifs concrets et mesurables",
+        "Soutien à l’autonomie et aux habiletés sociales",
+        "Coordination avec les acteurs de l’accompagnement"
+      ],
+      "paragraphs": [
+        "Chaque accompagnement commence par une écoute attentive et une compréhension fine de la situation.",
+        "Nous co-construisons un plan d’intervention clair, avec des objectifs réalistes et une progression visible."
+      ]
+    },
+    "cta": {
+      "primary": {
+        "label": "Prendre rendez-vous",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Découvrir l’approche",
+        "href": "/approche"
+      }
+    },
+    "seo": {
+      "title": "Éducatrice spécialisée – Déficience intellectuelle",
+      "description": "Accompagnement éducatif spécialisé pour personnes avec déficience intellectuelle, avec ou sans troubles associés. Objectifs concrets, autonomie, habiletés sociales."
+    },
+    "profileSelector": {
+      "label": "Vous êtes :",
+      "options": [
+        { "key": "accompagne", "label": "Un(e) accompagné(e)" },
+        { "key": "aidant", "label": "Un(e) accompagnante" },
+        { "key": "pro", "label": "Un(e) partenaire social" }
+      ]
+    },
+    "introsByProfile": {
+      "accompagne": {
+        "title": "Tu n’es pas seul(e) dans ton parcours",
+        "lead": "Je suis là pour t’accompagner, à ton rythme, dans ton quotidien.",
+        "text": "Ensemble, nous travaillerons sur ce qui est important pour toi : mieux comprendre ton environnement, développer ton autonomie, renforcer ta confiance et trouver des solutions concrètes à tes difficultés. Chaque pas compte, et je suis là pour avancer avec toi, simplement."
+      },
+      "aidant": {
+        "title": "Vous accompagnez un proche ? Vous n’êtes pas seul(e)",
+        "lead": "J’accompagne votre enfant ou votre proche avec bienveillance et structure.",
+        "text": "Mon objectif est de soutenir son développement, son autonomie et son épanouissement au quotidien, tout en vous apportant des outils concrets et adaptés à votre réalité. Nous avançons ensemble, dans une relation de confiance, pour construire des solutions durables et réalistes."
+      },
+      "pro": {
+        "title": "Un accompagnement spécialisé en collaboration",
+        "lead": "Je travaille en lien avec les équipes et les structures partenaires.",
+        "text": "J’interviens auprès de personnes présentant une déficience intellectuelle, avec ou sans troubles associés, dans une logique de coopération et de cohérence des accompagnements. L’objectif est de soutenir les projets individualisés, favoriser l’autonomie et assurer une continuité des pratiques entre les différents acteurs."
+      }
+    }
+  },
+  "about": {
+    "intro": {
+      "title": "À propos",
+      "subtitle": "Une approche centrée sur la personne et son environnement",
+      "lead": "Mon rôle est de soutenir le développement des compétences, la participation sociale et l’autonomie au quotidien."
+    },
+    "content": {
+      "paragraphs": [
+        "Je propose des accompagnements individualisés et adaptés aux besoins, en tenant compte de l’histoire, des capacités et des préférences de la personne.",
+        "L’objectif est de créer des repères stables et des outils concrets, réutilisables à la maison, à l’école, au travail ou en structure."
+      ],
+      "values": [
+        {
+          "title": "Bienveillance",
+          "text": "Un cadre sécurisant, sans jugement, qui valorise les progrès."
+        },
+        {
+          "title": "Clarté",
+          "text": "Des objectifs simples, compréhensibles, et une progression suivie."
+        },
+        {
+          "title": "Coopération",
+          "text": "Travail en lien avec les familles, aidants et partenaires."
+        }
+      ]
+    },
+    "blocks": {
+      "credentials": {
+        "title": "Formation et expérience",
+        "items": [
+          "Diplôme / certification (à compléter)",
+          "Expérience en milieu (à compléter)",
+          "Formations complémentaires (à compléter)"
+        ]
+      },
+      "audiences": {
+        "title": "Public accompagné",
+        "items": ["Enfants", "Adolescents", "Adultes", "Familles / aidants"]
+      }
+    },
+    "seo": {
+      "title": "À propos – Éducatrice spécialisée",
+      "description": "Découvrez le parcours et l’approche d’une éducatrice spécialisée en déficience intellectuelle, avec ou sans trouble associé."
+    }
+  },
+  "services": {
+    "intro": {
+      "title": "Accompagnements proposés",
+      "subtitle": "Des interventions adaptées à vos objectifs",
+      "lead": "Chaque accompagnement est personnalisé : évaluation, objectifs, outils, suivi."
+    },
+
+    "forWho": {
+      "title": "Pour qui ?",
+      "items": [
+        "Enfants et adolescents en situation de handicap intellectuel",
+        "Avec ou sans troubles associés (TSA, TDAH, troubles DYS…)",
+        "Jeunes en rupture de parcours",
+        "Jeunes en attente de place en structure spécialisée"
+      ]
+    },
+
+    "framework": {
+      "title": "Comment se déroulent les accompagnements ?",
+      "items": [
+        "Interventions à domicile et dans les différents lieux de vie",
+        "Accompagnement individualisé selon les besoins",
+        "Développement et maintien des compétences",
+        "Soutien à l’autonomie et à la communication",
+        "Favoriser l’inclusion sociale (sport, loisirs, sorties)",
+        "Travail en partenariat avec les professionnels",
+        "Soutien aux familles et droit au répit"
+      ]
+    },
+
+    "process": {
+      "title": "Le processus d’accompagnement",
+      "items": [
+        {
+          "title": "Évaluation et bilan des besoins",
+          "description": "Analyse du quotidien, des compétences et des difficultés afin de définir des objectifs réalistes.",
+          "details": [
+            "Entretien initial",
+            "Observation",
+            "Synthèse et plan d’intervention"
+          ]
+        },
+        {
+          "title": "Autonomie au quotidien",
+          "description": "Routines, organisation, gestion du temps, tâches de la vie quotidienne.",
+          "details": [
+            "Méthodes visuelles",
+            "Structuration",
+            "Généralisation des acquis"
+          ]
+        },
+        {
+          "title": "Habiletés sociales et communication",
+          "description": "Comprendre les règles sociales, s’exprimer, gérer les interactions.",
+          "details": [
+            "Jeux de rôle",
+            "Scénarios sociaux",
+            "Outils de communication"
+          ]
+        },
+        {
+          "title": "Gestion des comportements / régulation",
+          "description": "Comprendre les facteurs déclencheurs, développer des stratégies de régulation.",
+          "details": [
+            "Analyse fonctionnelle (selon contexte)",
+            "Stratégies de prévention",
+            "Outils de retour au calme"
+          ]
+        },
+        {
+          "title": "Soutien aux familles et aidants",
+          "description": "Conseils, outils et ajustements pour faciliter le quotidien et renforcer la cohérence.",
+          "details": [
+            "Guidance parentale / aidants",
+            "Outils à la maison",
+            "Suivi et ajustements"
+          ]
+        }
+      ]
+    },
+
+    "pricing": {
+      "title": "Tarifs",
+      "text": "Les tarifs sont modulables selon le type d’intervention défini ensemble. Des aides financières peuvent être possibles. N’hésitez pas à me contacter pour en discuter."
+    },
+
+    "notes": [
+      "Les modalités (à domicile, en structure, visio) sont à définir selon les besoins et le contexte.",
+      "Les troubles associés peuvent inclure des difficultés de communication, TSA, TDAH, troubles anxieux, etc."
+    ],
+
+    "cta": {
+      "primary": {
+        "label": "Me contacter",
+        "href": "/contact"
+      }
+    },
+
+    "seo": {
+      "title": "Accompagnement – Éducatrice spécialisée",
+      "description": "Évaluation, autonomie, habiletés sociales, régulation, soutien aux familles. Interventions personnalisées."
+    }
+  },
+  "approach": {
+    "intro": {
+      "title": "Approche",
+      "subtitle": "Une méthode structurée et flexible",
+      "lead": "Du concret, du mesurable, et une vraie adaptation au terrain."
+    },
+    "content": {
+      "steps": [
+        {
+          "title": "1) Premier échange",
+          "text": "Comprendre la demande, le contexte et les priorités."
+        },
+        {
+          "title": "2) Évaluation",
+          "text": "Observer, recueillir les informations, identifier les forces et les besoins."
+        },
+        {
+          "title": "3) Objectifs et outils",
+          "text": "Définir des objectifs clairs et mettre en place des supports adaptés."
+        },
+        {
+          "title": "4) Mise en pratique",
+          "text": "Travailler les compétences en situation réelle, avec répétition et renforcement."
+        },
+        {
+          "title": "5) Suivi et ajustements",
+          "text": "Mesurer les progrès, ajuster les stratégies, soutenir la généralisation."
+        }
+      ],
+      "principles": [
+        "Respect du rythme et des préférences",
+        "Outils concrets (visuels, routines, scénarios)",
+        "Collaboration avec l’entourage",
+        "Progression observable et réaliste"
+      ]
+    },
+    "seo": {
+      "title": "Approche – Éducatrice spécialisée",
+      "description": "Une approche structurée : évaluation, objectifs, outils concrets, mise en pratique, suivi."
+    }
+  },
+  "informations": {
+    "intro": {
+      "title": "Informations",
+      "subtitle": "Comprendre la déficience intellectuelle",
+      "lead": "Cette page a pour objectif de vous apporter des repères simples et fiables."
+    },
+    "deficiency": {
+      "title": "Qu’est-ce que la déficience intellectuelle ?",
+      "paragraphs": [
+        "La déficience intellectuelle se caractérise par des limitations significatives du fonctionnement intellectuel et des comportements adaptatifs.",
+        "Elle apparaît durant la période de développement et peut avoir des répercussions sur l’apprentissage, la communication, l’autonomie et la vie sociale.",
+        "Chaque personne est unique : les capacités, les besoins et le rythme de progression varient d’un individu à l’autre."
+      ]
+    },
+    "associatedDisorders": {
+      "title": "Troubles associés",
+      "intro": "Certaines personnes peuvent présenter un ou plusieurs troubles associés à la déficience intellectuelle.",
+      "items": [
+        {
+          "title": "Troubles du spectre de l’autisme (TSA)",
+          "text": "Difficultés dans la communication, les interactions sociales et comportements répétitifs."
+        },
+        {
+          "title": "Trouble du déficit de l’attention avec ou sans hyperactivité (TDAH)",
+          "text": "Difficultés de concentration, impulsivité, agitation motrice."
+        },
+        {
+          "title": "Troubles anxieux",
+          "text": "Anxiété, peurs excessives, difficultés à gérer les situations nouvelles."
+        },
+        {
+          "title": "Troubles du langage et de la communication",
+          "text": "Difficultés à comprendre ou à s’exprimer verbalement."
+        },
+        {
+          "title": "Troubles du comportement",
+          "text": "Opposition, agressivité, difficultés de régulation émotionnelle."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "lead": "Voici quelques réponses aux questions les plus courantes.",
+      "items": [
+        {
+          "q": "La déficience intellectuelle est-elle une maladie ?",
+          "a": "Non, ce n’est pas une maladie mais un handicap. Elle correspond à un fonctionnement intellectuel différent."
+        },
+        {
+          "q": "Peut-on progresser avec un accompagnement ?",
+          "a": "Oui, avec un accompagnement adapté, les personnes peuvent développer leurs compétences et gagner en autonomie."
+        },
+        {
+          "q": "Les troubles associés sont-ils systématiques ?",
+          "a": "Non, ils ne sont pas systématiques. Chaque personne a un profil unique."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "intro": {
+      "title": "Contact",
+      "subtitle": "Parlons de votre situation",
+      "lead": "Décrivez brièvement votre besoin : je vous réponds dès que possible."
+    },
+    "content": {
+      "methods": [
+        {
+          "type": "email",
+          "label": "Email",
+          "value": "contact@exemple.fr"
+        },
+        {
+          "type": "phone",
+          "label": "Téléphone",
+          "value": "+33 6 00 00 00 00"
+        }
+      ],
+      "form": {
+        "fields": {
+          "name": "Nom",
+          "email": "Email",
+          "phone": "Téléphone",
+          "message": "Message"
+        },
+        "consent": "En soumettant ce formulaire, j’accepte que mes informations soient utilisées uniquement pour être recontacté(e)."
+      }
+    },
+    "seo": {
+      "title": "Contact – Éducatrice spécialisée",
+      "description": "Contactez une éducatrice spécialisée en déficience intellectuelle pour discuter de vos besoins et objectifs."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "intro": {
+        "title": "Politique de confidentialité",
+        "subtitle": "Protection de vos données",
+        "lead": "Vos informations sont utilisées uniquement pour répondre à votre demande."
+      },
+      "content": {
+        "paragraphs": [
+          "Les données collectées via le formulaire de contact sont utilisées uniquement pour vous recontacter.",
+          "Aucune donnée n’est vendue ou transmise à des tiers en dehors d’obligations légales."
+        ]
+      }
+    },
+    "terms": {
+      "intro": {
+        "title": "Mentions légales",
+        "subtitle": "Informations sur l’éditeur du site",
+        "lead": "À compléter selon votre statut et votre hébergeur."
+      },
+      "content": {
+        "paragraphs": [
+          "Nom / statut : (à compléter)",
+          "Adresse : (à compléter)",
+          "Hébergeur : (à compléter)"
+        ]
+      }
+    }
+  },
+  "legalPages": {
+    "legal": {
+      "title": "Mentions légales",
+      "intro": "Conformément aux dispositions de la LCEN, voici les informations légales du site.",
+      "publisher": {
+        "title": "Éditeur du site",
+        "nameLabel": "Nom",
+        "nameValue": "Manon Pontasse",
+        "statusLabel": "Statut",
+        "statusValue": "Éducatrice spécialisée indépendante",
+        "emailLabel": "Email",
+        "emailValue": "contact@exemple.fr",
+        "addressLabel": "Adresse",
+        "addressValue": "À compléter",
+        "siretLabel": "SIRET",
+        "siretValue": "À compléter"
+      },
+      "publication": {
+        "title": "Responsable de publication",
+        "value": "Manon Pontasse"
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "providerLabel": "Hébergeur",
+        "providerValue": "À compléter (OVH, Vercel, etc.)",
+        "addressLabel": "Adresse",
+        "addressValue": "À compléter"
+      },
+      "ip": {
+        "title": "Propriété intellectuelle",
+        "text": "L’ensemble des contenus présents sur ce site (textes, images, graphismes, logo) sont la propriété exclusive de l’éditrice du site, sauf mention contraire. Toute reproduction est interdite sans autorisation."
+      }
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "Cette politique de confidentialité décrit comment sont collectées, utilisées et protégées vos données personnelles.",
+      "dataCollected": {
+        "title": "Données collectées",
+        "lead": "Les données personnelles collectées via le formulaire de contact sont :",
+        "items": ["Nom", "Adresse email", "Message"]
+      },
+      "use": {
+        "title": "Utilisation des données",
+        "text": "Ces informations sont utilisées uniquement afin de pouvoir vous recontacter suite à votre demande."
+      },
+      "retention": {
+        "title": "Durée de conservation",
+        "text": "Les données sont conservées pendant une durée maximale de 12 mois après le dernier échange."
+      },
+      "sharing": {
+        "title": "Partage des données",
+        "text": "Aucune donnée n’est vendue, cédée ou transmise à des tiers."
+      },
+      "rights": {
+        "title": "Droits des utilisateurs",
+        "lead": "Conformément au RGPD, vous disposez des droits suivants :",
+        "items": [
+          "Droit d’accès",
+          "Droit de rectification",
+          "Droit à l’effacement",
+          "Droit d’opposition"
+        ]
+      },
+      "contact": {
+        "text": "Pour exercer vos droits, contactez :",
+        "email": "contact@exemple.fr"
+      }
+    }
+  },
+  "cookies": {
+    "enabled": true,
+    "title": "Cookies",
+    "text": "Ce site utilise uniquement des cookies nécessaires au bon fonctionnement (pas de publicité ni de tracking).",
+    "acceptLabel": "J’ai compris",
+    "moreLabel": "En savoir plus",
+    "moreHref": "/confidentialite"
+  }
+}

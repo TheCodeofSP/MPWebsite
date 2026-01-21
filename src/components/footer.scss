@@ -1,0 +1,49 @@
+@use "../style/tokens.scss" as t;
+
+.footer-container {
+  background-color: t.$color-secondary;
+  padding: 10px 20px;
+  border-radius: t.$card-border-radius;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+.footer-legal {
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  gap: t.$spacing-s;
+
+  p {
+    margin: 0;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: t.$spacing-s;
+  @media (max-width: 878px) {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}
+

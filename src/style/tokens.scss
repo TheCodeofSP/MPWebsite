@@ -1,0 +1,147 @@
+@use "sass:color";
+
+// ----------------------------
+// Couleurs (issues de la carte)
+// ----------------------------
+
+// Palette principale
+$color-primary: #8e9f95; // vert sauge
+$color-secondary: #d7a19b; // pêche rosé
+$color-accent: #e2c28f; // ocre clair
+$color-background: #e7d8c6; // beige doux (fond)
+$color-card-background: rgba(255, 255, 255, 0.7); // blanc “lait”
+$color-surface: rgba(255, 255, 255, 0.55); // sections légères
+
+$color-background-light: #e7d8c6; // fond clair
+
+// Texte
+$color-text-primary: #2b1f1a; // noir doux (texte principal)
+$color-text-secondary: rgba(43, 31, 26, 0.75);
+$color-title: #2b1f1a;
+
+// Bordures & lignes
+$color-border: rgba(43, 31, 26, 0.15);
+$color-border-secondary: rgba(43, 31, 26, 0.1);
+
+// États (accessibles / pas agressifs)
+$color-success: #6f857a; // dérivé du vert
+$color-warning: #b98d4f; // dérivé ocre
+$color-danger: #a85f57; // dérivé pêche
+
+// Liens
+$color-link: $color-danger;
+$color-link-hover: color.adjust($color-danger, $lightness: -10%);
+
+// ----------------------------
+// Typographie
+// ----------------------------
+
+// Titres principaux
+$font-family-title: "Playfair Display", serif;
+$font-weight-title: 600;
+$font-size-title: 44px; // hero H1 (tu peux ajuster selon design)
+
+// Sous-titres / Sections
+$font-family-subtitle: "Playfair Display", serif;
+$font-weight-subtitle: 600;
+$font-size-subtitle: 26px; // H2
+
+// Titres secondaires (H3)
+$font-family-heading: "Playfair Display", serif;
+$font-weight-heading: 600;
+$font-size-heading: 20px;
+
+// Texte normal
+$font-family-text: "Lora", serif;
+$font-weight-text: 400;
+$font-size-text: 16px;
+
+// Texte “lead” (intro, accroche)
+$font-family-lead: "Lora", serif;
+$font-weight-lead: 500;
+$font-size-lead: 18px;
+
+// Petits textes (footer, hints)
+$font-family-small: "Lora", serif;
+$font-weight-small: 400;
+$font-size-small: 14px;
+
+// Interlignage
+$line-height-title: 1.1;
+$line-height-text: 1.6;
+
+// ----------------------------
+// Cards et Conteneurs
+// ----------------------------
+
+$container-max-width: 1280px;
+$container-padding: 24px;
+
+$card-border-radius: 18px;
+$card-border: 1px solid $color-border;
+$card-padding: 20px;
+
+// Ombres (douces)
+$shadow-sm: 0 6px 18px rgba(43, 31, 26, 0.08);
+$shadow-md: 0 10px 30px rgba(43, 31, 26, 0.1);
+
+// ----------------------------
+// Boutons
+// ----------------------------
+
+$button-primary: $color-primary;
+$button-secondary: $color-secondary;
+$button-accent: $color-accent;
+
+$button-text: #ffffff;
+$button-text-dark: $color-text-primary;
+
+$button-background: $button-primary;
+
+$font-family-button: "Lora", serif;
+$font-weight-button: 600;
+$font-size-button: 16px;
+
+$button-border-radius: 14px;
+$button-padding-y: 12px;
+$button-padding-x: 16px;
+
+// ----------------------------
+// Inputs / Formulaires
+// ----------------------------
+
+$input-background: rgba(255, 255, 255, 0.75);
+$input-border: 1px solid $color-border;
+$input-border-radius: 14px;
+$input-padding-y: 12px;
+$input-padding-x: 14px;
+
+$placeholder-color: rgba(43, 31, 26, 0.45);
+
+// ----------------------------
+// Autres styles
+// ----------------------------
+
+$transition-speed: 0.25s;
+
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1200px;
+
+$spacing-2xs: 0.25rem;
+$spacing-xs: 0.5rem;
+$spacing-s: 1rem;
+$spacing-m: 1.5rem;
+$spacing-l: 2rem;
+$spacing-xl: 3rem;
+$spacing-2xl: 4rem;
+
+
+// ======================================================
+// Bonus : variables dérivées utiles (facultatif)
+// ======================================================
+
+$color-primary-hover: color.adjust($color-primary, $lightness: -8%);
+$color-secondary-hover: color.adjust($color-secondary, $lightness: -8%);
+$color-accent-hover: color.adjust($color-accent, $lightness: -10%);
+

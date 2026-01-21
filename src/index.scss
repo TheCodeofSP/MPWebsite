@@ -1,0 +1,64 @@
+@use "./style/tokens.scss" as t;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: t.$color-text-primary;
+  background-color: t.$color-background;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  line-height: t.$line-height-title;
+  font-family: t.$font-family-title;
+  font-weight: t.$font-weight-title;
+  font-size: t.$font-size-title;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: t.$font-family-text;
+  font-weight: t.$font-weight-text;
+  font-size: t.$font-size-text;
+}
+a {
+  color: t.$color-link;
+  text-decoration: none;
+  transition: color 0.25s;
+  font-family: t.$font-family-text;
+  font-weight: bold;
+}
+a:hover {
+  color: t.$color-link-hover;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+

@@ -1,0 +1,22 @@
+@use "../style/tokens.scss" as t;
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-color: t.$color-card-background;
+  padding: 10px 20px;
+  border-radius: t.$card-border-radius;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.header-logo img {
+  height: 50px;
+  width: auto;
+}

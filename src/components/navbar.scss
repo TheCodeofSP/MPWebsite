@@ -1,0 +1,100 @@
+@use "../style/tokens.scss" as t;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: t.$spacing-m;
+  position: relative;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+  gap: t.$spacing-m;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Burger caché en desktop */
+.navbar__burger {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 8px;
+  cursor: pointer;
+
+  // utile pour bien centrer les barres
+  width: 44px;
+  height: 44px;
+
+  span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 3px auto;
+    background: currentColor;
+
+    transition:
+      transform 180ms ease,
+      opacity 180ms ease;
+    transform-origin: center;
+  }
+
+  &.is-open {
+    span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar__burger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 20; // au-dessus du menu
+  }
+
+  .navbar__links {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+    gap: t.$spacing-m;
+    padding: 16px 20px;
+
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    z-index: 20;
+  }
+
+  .navbar__links.is-open {
+    display: flex;
+    border-radius: t.$card-border-radius;
+  }
+
+  .navbar__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    border: 0;
+    z-index: 10;
+  }
+}

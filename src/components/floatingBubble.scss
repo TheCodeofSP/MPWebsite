@@ -1,0 +1,47 @@
+@use "../style/tokens.scss" as t;
+
+
+.floating-bubble {
+  position: fixed;
+  right: 16px;
+  bottom: 56px;
+  z-index: 9999;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 14px;
+  border-radius: 999px;
+
+  background: t.$color-primary;
+  color: t.$color-card-background;
+  text-decoration: none;
+
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.25s cubic-bezier(.22,.61,.36,1),
+    box-shadow 160ms ease;
+
+  &:hover {
+    box-shadow: 0 14px 36px rgba(0,0,0,0.25);
+  }
+}
+
+.floating-bubble__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.floating-bubble__label {
+  font-weight: 600;
+}
+
+/* Mobile : pas de suivi souris (pas utile) */
+@media (max-width: 768px) {
+  .floating-bubble {
+    transform: none !important;
+  }
+}
