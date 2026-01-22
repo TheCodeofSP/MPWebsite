@@ -9,7 +9,7 @@
   "home": {
     "intro": {
       "title": "Manon, Éducatrice spécialisée indépendante",
-      "subtitle": "Pour enfants, adolescents et adultes avec déficience intellectuelle, avec ou sans trouble associé. J'assure un suivi structuré, bienveillant et adapté au rythme de chaque personne, en lien avec la famille et les partenaires."
+      "subtitle": "Pour enfants, les adolescents et les adultes avec déficience intellectuelle, avec ou sans trouble associé. J'assure un suivi structuré, bienveillant et adapté au rythme de chaque personne, en lien avec la famille et les partenaires."
     },
     "content": {
       "highlights": [
@@ -41,8 +41,8 @@
       "label": "Vous êtes :",
       "options": [
         { "key": "accompagne", "label": "Un(e) accompagné(e)" },
-        { "key": "aidant", "label": "Un(e) accompagnante" },
-        { "key": "pro", "label": "Un(e) partenaire social" }
+        { "key": "aidant", "label": "Un(e) accompagnant(e)" },
+        { "key": "pro", "label": "Un(e) partenaire social(e)" }
       ]
     },
     "introsByProfile": {
@@ -59,7 +59,7 @@
       "pro": {
         "title": "Un accompagnement spécialisé en collaboration",
         "lead": "Je travaille en lien avec les équipes et les structures partenaires.",
-        "text": "J’interviens auprès de personnes présentant une déficience intellectuelle, avec ou sans troubles associés, dans une logique de coopération et de cohérence des accompagnements. L’objectif est de soutenir les projets individualisés, favoriser l’autonomie et assurer une continuité des pratiques entre les différents acteurs."
+        "text": "J’interviens auprès de personnes présentant une déficience intellectuelle, avec ou sans troubles associés, dans une logique de coopération et de cohérence des accompagnements. L’objectif est de soutenir les projets individualisés, de favoriser l’autonomie et d'assurer une continuité des pratiques entre les différents acteurs."
       }
     }
   },
@@ -85,7 +85,7 @@
         },
         {
           "title": "Coopération",
-          "text": "Travail en lien avec les familles, aidants et partenaires."
+          "text": "Travail en lien avec les familles, les aidants et les partenaires."
         }
       ]
     },
@@ -272,23 +272,23 @@
       "items": [
         {
           "title": "Troubles du spectre de l’autisme (TSA)",
-          "text": "Difficultés dans la communication, les interactions sociales et comportements répétitifs."
+          "text": "difficultés dans la communication, les interactions sociales et comportements répétitifs."
         },
         {
           "title": "Trouble du déficit de l’attention avec ou sans hyperactivité (TDAH)",
-          "text": "Difficultés de concentration, impulsivité, agitation motrice."
+          "text": "difficultés de concentration, impulsivité, agitation motrice."
         },
         {
           "title": "Troubles anxieux",
-          "text": "Anxiété, peurs excessives, difficultés à gérer les situations nouvelles."
+          "text": "anxiété, peurs excessives, difficultés à gérer les situations nouvelles."
         },
         {
           "title": "Troubles du langage et de la communication",
-          "text": "Difficultés à comprendre ou à s’exprimer verbalement."
+          "text": "difficultés à comprendre ou à s’exprimer verbalement."
         },
         {
           "title": "Troubles du comportement",
-          "text": "Opposition, agressivité, difficultés de régulation émotionnelle."
+          "text": "opposition, agressivité, difficultés de régulation émotionnelle."
         }
       ]
     },
