@@ -6,6 +6,7 @@
   background-color: t.$color-card-background;
   padding: 10px 20px;
   border-radius: t.$card-border-radius;
+  
 }
 
 .header-content {
@@ -13,10 +14,13 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 100%;
+  border: 1px solid t.$color-border;
+    padding: 10px 20px;
+  border-radius: t.$card-border-radius;
+
 }
 
 .header-logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
 }
