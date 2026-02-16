@@ -75,7 +75,7 @@ $line-height-text: 1.6;
 // ----------------------------
 
 $container-max-width: 1280px;
-$container-padding: 24px;
+$container-padding: 6px;
 
 $card-border-radius: 18px;
 $card-border: 1px solid $color-border;
@@ -144,4 +144,3 @@ $spacing-2xl: 4rem;
 $color-primary-hover: color.adjust($color-primary, $lightness: -8%);
 $color-secondary-hover: color.adjust($color-secondary, $lightness: -8%);
 $color-accent-hover: color.adjust($color-accent, $lightness: -10%);
-

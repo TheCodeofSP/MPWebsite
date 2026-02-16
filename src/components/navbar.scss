@@ -1,5 +1,9 @@
 @use "../style/tokens.scss" as t;
 
+/* =========================
+   Mobile-first (base)
+   ========================= */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -9,26 +13,18 @@
   position: relative;
 }
 
-.navbar__links {
-  display: flex;
-  flex-direction: row;
-  gap: t.$spacing-m;
-
-  a {
-    text-decoration: none;
-  }
-}
-
-/* Burger caché en desktop */
+/* Burger visible par défaut (mobile) */
 .navbar__burger {
-  display: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+
   background: transparent;
   color: t.$color-secondary;
   border: 0;
   padding: 8px;
   cursor: pointer;
-
-  // utile pour bien centrer les barres
   width: 44px;
   height: 44px;
 
@@ -38,7 +34,6 @@
     height: 2px;
     margin: 3px auto;
     background: currentColor;
-
     transition:
       transform 180ms ease,
       opacity 180ms ease;
@@ -49,53 +44,266 @@
     span:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
     }
-
     span:nth-child(2) {
       opacity: 0;
     }
-
     span:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
   }
+
+  &:focus-visible {
+    outline: 3px solid rgba(0, 0, 0, 0.18);
+    outline-offset: 2px;
+    border-radius: 12px;
+  }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .navbar__burger {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 20; // au-dessus du menu
+/* Menu fermé par défaut en mobile */
+.navbar__links {
+  display: none;
+  position: absolute;
+  width: auto;
+  top: 10%;
+  right: 20px;
+
+  flex-direction: column;
+  align-items: stretch;
+  gap: t.$spacing-s;
+  padding: 16px 20px;
+
+  background: t.$color-card-background;
+  border: t.$card-border;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: t.$card-border-radius;
+  box-shadow: t.$shadow-md;
+  backdrop-filter: blur(10px);
+
+  z-index: 20;
+
+  a {
+    text-decoration: none;
   }
 
-  .navbar__links {
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    right: 0;
-
-    flex-direction: column;
-    gap: t.$spacing-m;
-    padding: 16px 20px;
-
-    background: white;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    z-index: 20;
-  }
-
-  .navbar__links.is-open {
+  &.is-open {
     display: flex;
-    border-radius: t.$card-border-radius;
+  }
+}
+
+/* Overlay mobile */
+.navbar__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border: 0;
+  z-index: 10;
+}
+
+/* Liens */
+.navbar__link {
+  color: t.$color-text-primary;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 12px;
+  transition:
+    background t.$transition-speed ease,
+    transform 160ms ease;
+
+  &:hover {
+    background: t.$input-background;
+    transform: translateY(-1px);
+  }
+
+  &.active {
+    background: t.$color-primary;
+    color: t.$color-card-background;
+  }
+}
+
+/* Dropdown container */
+.navbar__dropdown {
+  position: relative;
+}
+
+/* Bouton “Informations” */
+.navbar__dropbtn {
+  width: 100%;
+  appearance: none;
+  border: 1px solid t.$color-border;
+  background: t.$input-background;
+
+  color: t.$color-text-primary;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  transition:
+    background t.$transition-speed ease,
+    transform 160ms ease,
+    border-color t.$transition-speed ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    background: t.$color-surface;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(0, 0, 0, 0.18);
+    outline-offset: 2px;
+  }
+
+  &.is-active {
+    background: t.$color-primary;
+    color: t.$color-card-background;
+    border-color: transparent;
+  }
+}
+
+.navbar__chev {
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+/* En mobile, on n’utilise pas le dropdown desktop */
+.navbar__menu {
+  display: none;
+}
+
+/* Sous-liens mobile sous “Informations” */
+.navbar__mobileSub {
+  display: grid;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.navbar__sublink {
+  display: block;
+  padding: t.$spacing-xs;
+  margin-left: t.$spacing-m;
+  border-left: 2px solid t.$color-border;
+  color: t.$color-text-primary;
+  opacity: 0.9;
+  border-radius: t.$card-border-radius;
+
+  &:hover {
+    background: t.$input-background;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(0, 0, 0, 0.18);
+    outline-offset: 2px;
+  }
+}
+
+/* =========================
+   Desktop enhancements
+   ========================= */
+
+@media (min-width: t.$mobile) {
+  /* Burger/overlay off */
+  .navbar__burger {
+    display: none;
   }
 
   .navbar__overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    display: none;
+  }
+
+  /* Menu toujours visible, inline */
+  .navbar__links {
+    display: flex;
+    position: static;
+    width: auto;
+    padding: 0;
+
+    flex-direction: row;
+    align-items: center;
+    gap: t.$spacing-m;
+
+    background: transparent;
     border: 0;
-    z-index: 10;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  /* Dropdown desktop actif */
+  .navbar__dropbtn {
+    width: auto;
+    border: 1px solid transparent;
+    background: transparent;
+    justify-content: center;
+
+    &:hover {
+      background: t.$input-background;
+    }
+
+    &.is-active {
+      background: t.$color-primary;
+      color: t.$color-card-background;
+      border-color: transparent;
+    }
+  }
+
+  .navbar__mobileSub {
+    display: none;
+  }
+
+  .navbar__dropdown:hover .navbar__menu,
+  .navbar__dropdown:focus-within .navbar__menu,
+  .navbar__dropdown.is-open .navbar__menu {
+    display: grid;
+    gap: 6px;
+  }
+
+  /* Menu */
+  .navbar__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+
+    background: t.$color-card-background;
+    border: t.$card-border;
+    border-radius: t.$card-border-radius;
+    box-shadow: t.$shadow-md;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    z-index: 999; /* monte pour être sûr */
+  }
+
+  .navbar__dropdown.is-open .navbar__menu {
+    display: grid;
+    gap: 6px;
+  }
+
+  .navbar__menuItem {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 12px;
+    color: t.$color-text-primary;
+    font-weight: 600;
+
+    border: 1px solid transparent;
+    transition:
+      background t.$transition-speed ease,
+      border-color t.$transition-speed ease;
+
+    &:hover {
+      background: t.$input-background;
+      border-color: t.$color-border;
+    }
+
+    &.active {
+      background: t.$color-primary;
+      color: t.$color-card-background;
+    }
   }
 }

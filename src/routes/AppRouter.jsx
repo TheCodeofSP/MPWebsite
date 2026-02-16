@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
 import Contact from "../pages/Contact.jsx";
-import Informations from "../pages/Information.jsx";
+import Informations from "../pages/Informations.jsx";
 import Process from "../pages/Process.jsx";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
@@ -21,7 +21,7 @@ function AppRouter() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/information" element={<Informations />} />
+        <Route path="/informations" element={<Informations />} />
         <Route path="/process" element={<Process />} />
         <Route path="/mentions-legales" element={<Legal />} />
         <Route path="/confidentialite" element={<Privacy />} />

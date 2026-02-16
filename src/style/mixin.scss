@@ -1,1 +1,7 @@
 @use "./tokens.scss" as t;
+
+@mixin from($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

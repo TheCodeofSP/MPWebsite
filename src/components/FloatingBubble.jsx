@@ -4,7 +4,7 @@ import "./floatingBubble.scss";
 
 export default function FloatingBubble({
   to = "/contact",
-  label = "Contact",
+  label = "Me contacter",
 }) {
   const bubbleRef = useRef(null);
   const [offset, setOffset] = useState({ x: 0, y: 0 });

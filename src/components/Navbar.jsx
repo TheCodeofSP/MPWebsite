@@ -1,17 +1,40 @@
-import { Link, NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
 import "./navbar.scss";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false); // dropdown desktop
+  const location = useLocation();
 
-  // Ferme le menu quand on change de route (clic sur un lien)
-  const close = () => setOpen(false);
+  const close = () => {
+    setOpen(false);
+    setInfoOpen(false);
+  };
 
-  // Bonus: fermer avec Escape
+  // Sous-catégories (hash)
+  const infoItems = useMemo(
+    () => [
+      {
+        label: "Déficience intellectuelle",
+        to: "/informations#deficience-intellectuelle",
+      },
+      { label: "Troubles associés", to: "/informations#troubles-associes" },
+      { label: "FAQ", to: "/informations#faq" },
+    ],
+    [],
+  );
+
+  // Ferme menus quand on change de route
+  useEffect(() => {
+    close();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname, location.hash]);
+
+  // Fermer avec Escape
   useEffect(() => {
     const onKeyDown = (e) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") close();
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
@@ -32,24 +55,74 @@ export default function Navbar() {
       </button>
 
       <div className={`navbar__links ${open ? "is-open" : ""}`}>
-        <Link to="/" onClick={close}>
+        <Link to="/" onClick={close} className="navbar__link">
           Accueil
         </Link>
-        <NavLink to="/process" onClick={close}>
-          Approche
+
+        {/* Desktop: dropdown / Mobile: bloc avec sous-liens */}
+        <div className={`navbar__dropdown ${infoOpen ? "is-open" : ""}`}>
+          <button
+            type="button"
+            className={`navbar__dropbtn ${location.pathname === "/informations" ? "is-active" : ""}`}
+            aria-haspopup="menu"
+            aria-expanded={infoOpen}
+            onClick={() => setInfoOpen((v) => !v)}
+          >
+            Informations{" "}
+            <span className="navbar__chev" aria-hidden="true">
+              ▾
+            </span>
+          </button>
+
+          <div className="navbar__menu" role="menu" aria-label="Informations">
+            <NavLink
+              to="/informations"
+              onClick={close}
+              className="navbar__menuItem"
+              role="menuitem"
+            >
+              Vue d’ensemble
+            </NavLink>
+
+            {infoItems.map((it) => (
+              <Link
+                key={it.to}
+                to={it.to}
+                onClick={close}
+                className="navbar__menuItem"
+                role="menuitem"
+              >
+                {it.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile: sous-liens affichés dans la pile quand burger ouvert */}
+          <div className="navbar__mobileSub">
+            {infoItems.map((it) => (
+              <Link
+                key={it.to}
+                to={it.to}
+                onClick={close}
+                className="navbar__sublink"
+              >
+                {it.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <NavLink to="/process" onClick={close} className="navbar__link">
+          Mon approche
         </NavLink>
-        <NavLink to="/information" onClick={close}>
-          Informations
+        <NavLink to="/about" onClick={close} className="navbar__link">
+          Me connaître
         </NavLink>
-        <NavLink to="/about" onClick={close}>
-          Me connaitre
-        </NavLink>
-        <NavLink to="/contact" onClick={close}>
+        <NavLink to="/contact" onClick={close} className="navbar__link">
           Contact
         </NavLink>
       </div>
 
-      {/* Overlay pour fermer en cliquant en dehors */}
       {open && (
         <button
           className="navbar__overlay"

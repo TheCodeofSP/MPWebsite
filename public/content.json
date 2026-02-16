@@ -41,8 +41,8 @@
       "label": "Vous êtes :",
       "options": [
         { "key": "accompagne", "label": "Un(e) accompagné(e)" },
-        { "key": "aidant", "label": "Un(e) accompagnant(e)" },
-        { "key": "pro", "label": "Un(e) partenaire social(e)" }
+        { "key": "accompagnant", "label": "Un(e) accompagnant(e)" },
+        { "key": "partenaire_social", "label": "Un(e) partenaire social(e)" }
       ]
     },
     "introsByProfile": {
@@ -51,12 +51,12 @@
         "lead": "Je suis là pour t’accompagner, à ton rythme, dans ton quotidien.",
         "text": "Ensemble, nous travaillerons sur ce qui est important pour toi : mieux comprendre ton environnement, développer ton autonomie, renforcer ta confiance et trouver des solutions concrètes à tes difficultés. Chaque pas compte, et je suis là pour avancer avec toi, simplement."
       },
-      "aidant": {
+      "accompagnant": {
         "title": "Vous accompagnez un proche ? Vous n’êtes pas seul(e)",
         "lead": "J’accompagne votre enfant ou votre proche avec bienveillance et structure.",
         "text": "Mon objectif est de soutenir son développement, son autonomie et son épanouissement au quotidien, tout en vous apportant des outils concrets et adaptés à votre réalité. Nous avançons ensemble, dans une relation de confiance, pour construire des solutions durables et réalistes."
       },
-      "pro": {
+      "partenaire_social": {
         "title": "Un accompagnement spécialisé en collaboration",
         "lead": "Je travaille en lien avec les équipes et les structures partenaires.",
         "text": "J’interviens auprès de personnes présentant une déficience intellectuelle, avec ou sans troubles associés, dans une logique de coopération et de cohérence des accompagnements. L’objectif est de soutenir les projets individualisés, de favoriser l’autonomie et d'assurer une continuité des pratiques entre les différents acteurs."
@@ -213,7 +213,7 @@
   },
   "approach": {
     "intro": {
-      "title": "Approche",
+      "title": "Mon approche",
       "subtitle": "Une méthode structurée et flexible",
       "lead": "Du concret, du mesurable, et une vraie adaptation au terrain."
     },
@@ -313,7 +313,7 @@
   },
   "contact": {
     "intro": {
-      "title": "Contact",
+      "title": "Me contacter",
       "subtitle": "Parlons de votre situation",
       "lead": "Décrivez brièvement votre besoin : je vous réponds dès que possible."
     },
@@ -331,6 +331,77 @@
         }
       ],
       "form": {
+        "selects": {
+          "profile": {
+            "label": "Je suis…",
+            "placeholder": "Choisir…",
+            "optionsPath": "home.profileSelector.options"
+          },
+          "topic": {
+            "label": "Ma demande concerne…",
+            "placeholder": "Choisir…",
+            "optionsByProfile": {
+              "accompagne": [
+                {
+                  "value": "info",
+                  "label": "J’aimerais obtenir des informations"
+                },
+                {
+                  "value": "rdv",
+                  "label": "Je souhaite prendre rendez-vous"
+                },
+                {
+                  "value": "suivi",
+                  "label": "Je souhaite débuter un accompagnement"
+                }
+              ],
+              "accompagnant": [
+                {
+                  "value": "orientation",
+                  "label": "Orientation / conseils pour un proche"
+                },
+                {
+                  "value": "coordination",
+                  "label": "Coordination autour d’une situation"
+                },
+                {
+                  "value": "rdv",
+                  "label": "Demande de rendez-vous"
+                },
+                {
+                  "value": "suivi",
+                  "label": "Mise en place d’un accompagnement"
+                }
+              ],
+              "partenaire_social": [
+                {
+                  "value": "coordination",
+                  "label": "Coordination autour d’un bénéficiaire"
+                },
+                {
+                  "value": "projet",
+                  "label": "Échange autour d’un projet personnalisé"
+                },
+                {
+                  "value": "orientation",
+                  "label": "Orientation vers un accompagnement"
+                },
+                {
+                  "value": "partenariat",
+                  "label": "Développement de partenariat"
+                },
+                {
+                  "value": "intervention",
+                  "label": "Demande d’intervention / collaboration"
+                },
+                {
+                  "value": "rdv",
+                  "label": "Prise de rendez-vous"
+                }
+              ]
+            }
+          }
+        },
         "fields": {
           "name": "Nom",
           "email": "Email",
